@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}Min webbplats{% endblock %}</title>
+  </head>
+  <body>
+    <nav>
+      <a href="/">Hem</a>
+      <a href="/about">Om oss</a>
+      <a href="/contact">Kontakt</a>
+    </nav>
+
+    <main>
+      <h1>{% block heading %}Välkommen{% endblock %}</h1>
+      {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Min webbplats</p>
+    </footer>
+  </body>
+</html>
